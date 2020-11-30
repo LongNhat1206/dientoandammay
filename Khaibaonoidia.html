@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ke_Khai_Di_Chuyen_noi_Dia</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/Khaibaonoidia.css">
+    <script src="./js/Khaibaonoidia.js"></script>
+</head>
+<body style="padding:0px;margin:0px;" >
+            <!-- bố cục của header -->
+            <div class="header">
+                <a href="https://tokhaiyte.vn/">
+                    <img class="header_1" src="./img/anhheader1.png" alt="Logo">
+                </a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="1.html">&#127969; Trang chủ</a></li>
+                    <li><a href="#">😷 NCOV</a></li>
+                    <li>
+                        <a href="#">&#128221; Khai báo y tế</a>
+                        <ul class="menu1">
+                            <li><a href="KhaiBaoNhapCanh.html"> &#128188; Người nhập cảnh</a></li>
+                            <li><a href="Khaibaotoandan.html">&#128106; Toàn dân</a></li>
+                            <li><a href="Khaibaonoidia.html"> &#127939; Di chuyển nội địa</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">&#128226; Hỗ trợ</a></li>
+
+                </ul>
+            </div>
+            <div class="form" >
+                <form class="main">
+                    <h3>THÔNG TIN KHAI BÁO Y TẾ</h3>
+                    <h5>( PHÒNG CHỐNG DỊCH COVID-19 )</h5>
+                    <h6 style="color: red">Khuyến cáo: Khai báo thông tin sai là vi phạm pháp luật Việt Nam và có thể xử lý hình sự</h6>
+
+                    <div class="row " >
+                        <div class="col-md-12   col-xs-12 " >
+                        <label>
+                            <span style="padding-top: 30px">Khai hộ </span>
+                            <input id="Khai_hộ" type="hidden" value="0"  name="khai hộ" class="style-checkbox"/>
+                            <input id="checkbox" type="checkbox" value="1"  class="Khai_hộ style-checkbox" onclick="$('#input81894').val(this.checked?1:0).change()"/>
+                        </label>
+                        </div> 
+                    </div>
+                    <div>
+                        <label>Họ tên (ghi chữ IN HOA) <label style="color: red">(*)</label></label>
+                        <input type="text" name="" id="name">
+                        <label style="margin-left: 200px">Số hộ chiếu / CMND / CCCD<label style="color: red">(*)</label></label>
+                        <input type="text" name="" id="CMND">
+                    </div><br>
+                    <div>
+                        <div>
+                            <label>Năm sinh <label style="color: red">(*)</label>
+                                <input type="date" name="bday" id="Selectyear">
+                                <input type="submit">
+                            </label>                  
+                            <label style="padding-left: 80px" >Giới tính <label style="color: red">(*)</label>
+                                <select id="Selectsex">
+                                    <option value="">-Chọn-</option>
+                                    <option value="Nam">Nam</option>
+                                    <option value="Nu">Nữ</option>
+                                    <option value="Khac">Khác</option>
+                                </select> 
+                            </label>
+                            
+                            <label style="padding-left: 80px">Quốc tịch <label style="color: red">(*)</label>
+                            <select id="Selectscountry">
+                                <option value="">-Chọn-</option>
+                                <option value="VietNam">Việt Nam</option>
+                                <option value="My">Mỹ</option>
+                                <option value="Nga">Nga</option>
+                                <option value="Anh">Anh</option>
+                                <option value="TrungQuoc">Trung Quốc</option>
+                            </select> 
+                            </label>
+                        </div>
+                        </div><br>
+                    <label>Có thẻ bảo hiểm y tế <input type="checkbox" name="" style="margin-left: 20px"></label><br>
+                    <p><STRONG>Địa chỉ liên lạc tại Việt Nam</STRONG></p>
+                    <div>
+                        <div>
+                            <label>Tỉnh/ Thành phố<label style="color: red">(*)</label>
+                            <select name="calc_shipping_provinces" required="" id="Selectprovince">
+                                <option value="">Tỉnh / Thành phố</option>
+
+                                <option value="TPHN" >Thành phố Hà Nội</option>
+                                
+                                <option value="TPHCM" >Thành phố Hồ Chí Minh</option>
+                                
+                                <option value="TPDN" >thành phố Đà Nẵng</option>
+                            </select>
+
+                            <label style="padding-left: 40px" >Quận \ Huyện <label style="color: red">(*)</label>
+                            <select name="calc_shipping_district" required="" id="Selectdistrict">
+                                <option value="">Quận / Huyện</option>
+                                <option value="">Bắc Từ Liêm</option>
+                                <option value="">Quận 1</option>
+                                <option value="">Cẩm Lệ</option>
+                            </select>
+
+                            <label style="padding-left: 50px">Phường / Xã<label style="color: red">(*)</label>
+                            <select name="calc_shipping_district" required="" id="Selectvillage">
+                                <option value="">Phường / Xã</option>
+                                <option value="">Cổ Nhuế 1</option>
+                                <option value="">Bến Nghé</option>
+                                <option value="">Hòa An</option>
+                            </select>
+                            <input class="billing_address_1" name="" type="hidden" value="">
+                            <input class="billing_address_2" name="" type="hidden" value="">
+                        </div>
+                    </div>
+                    <div >
+                        <p><STRONG>Số nhà, phố, tổ dân phố/thôn/đội (*)</STRONG></p>
+                        
+                        <input class="form-control" name="fields[address]" type="text" value="" data-msg-required="Bạn chưa nhập địa chỉ" id="Selectaddress"/>
+                        
+                    </div> 
+                    <div >
+                        <div>
+                            <label >Điện thoại  <em>(*)</em>
+                            
+                                <input class="form-control inline-block form-inline " name="fields[phone]" type="number" value="" data-mgs-number="Số điện thoại chỉ được nhập số" data-msg-required="Bạn chưa nhập điện thoại" id="SDT"/>
+                            </label>
+                            <label style="padding-left: 500px;" >Email <em>(*)</em>
+                            
+                                <input class="form-control inline-block form-inline " name="fields[email]" data-msg-email="Email không đúng định dạng" type="text" value="" onblur="this.value=removeSpaces(this.value);" id="email"/>
+                            </label>
+                        </div>
+                    </div>
+                    <p><strong>Trong vòng 21 ngày qua, Anh/Chị có đến quốc gia/vùng lãnh thổ nào (Có thể đi qua nhiều quốc gia)</strong></p>
+                    <div>
+                        <textarea class="input81899 form-control" id="tt21n" style="height:200pxpx;"   name="fields[countryPassing]" class="form-control" ></textarea>
+                    </div>
+                    <p><STRONG>Di chuyển trong nước <em style="color: #f00;">(*)</em></STRONG></p>
+                    <div>
+                        <div class="row">
+                            <div>
+                                <div>
+                                    <div class="form-group inline-block form-inline label-width " > <label style="padding-left: 15px;" >Phương tiện đi lại <em style="color: #f00;">(*)</em></label>
+                            
+                                        <select class="form-control" name="fields[vehicle]" id="Selecttransport">
+                                        <option value="">--Chọn phương tiện--</option>
+                                        <option value="airplane" >Máy bay</option>
+                                        <option value="train" >Tàu hỏa</option>
+                                        <option value="car" >Xe khách</option>
+                                        <option value="personal" >Cá nhân</option>
+                                        </select>
+                                    </div> 
+                                </div> 
+                            </div>
+                            <div>
+                                <div >
+                                    <div class="form-group inline-block form-inline label-width " > <label style="padding-left: 50px;" >Nơi đi  <em style="color: #f00;">(*)</em></label>
+            
+                                <select id="departure"  name="fields[startProvinceId]" class="form-control" >
+                                    
+                                        <option value="">-Chọn-</option>
+                                        
+                                        <option value="TPHN" >Thành phố Hà Nội</option>
+                                        
+                                        <option value="TPHCM" >Thành phố Hồ Chí Minh</option>
+                                        
+                                        <option value="TPDN" >thành phố Đà Nẵng</option>
+                                    
+                                    </select>
+                                    </div> 
+                                </div> 
+                            </div>
+                                
+                                
+                                <div>
+                                    <div>
+                                        <div class="form-group inline-block form-inline label-width " > <label style="padding-left: 50px;" >Nơi đến  <em style="color: #f00;">(*)</em></label>
+                                            
+                                            <select id="destination"  name="fields[endProvinceId]" class="form-control" >
+                                            
+                                                <option value="">-Chọn-</option>
+                                
+                                                <option value="TPHN" >Thành phố Hà Nội</option>
+                                                
+                                                <option value="TPHCM" >Thành phố Hồ Chí Minh</option>
+                                                
+                                                <option value="TPDN" >Thành phố Đà Nẵng</option>
+
+                                            </select>
+                                        </div> 
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="row " >
+                            <div class="col-md-6 col-sm-6  col-xs-12 " >
+                            <div class="form-group inline-block form-inline label-width " > <label  >Số hiệu phương tiện  <em>(*)</em></label>
+                            
+                            <input id="vehicle_number" class="form-control" type="text" name="fields[vehicleCode]" value="" data-msg-required="Bạn chưa điền số phương tiện"/>
+                            </div> 
+                            </div> 
+                            <div class="col-md-6 col-sm-6  col-xs-12 " >
+                            <div class="form-group inline-block form-inline label-width " > <label  >Số ghế </label>
+                            
+                            <input class="form-control" type="text" name="fields[seat]" value="" data-msg-required="Bạn chưa điền số ghế" id="seats"/>
+                            </div> 
+                            </div> 
+                        </div> 
+                        <div class="row " >
+                            <div class="col-md-6 col-sm-6  col-xs-12 " >
+                            <div class="form-group inline-block form-inline label-width " > <label  >Ngày khởi hành  <em>(*)</em></label>
+                            
+                            <input id="departure_day" type="datetime-local" name="fields[startTime]" class="form-control" value=""  />
+                            
+                            </div> 
+                            </div> 
+                            <div class="col-md-6 col-sm-6  col-xs-12 " >
+                            <div class="form-group inline-block form-inline label-width " > <label  >Ngày tới  <em>(*)</em></label>
+                            
+                            <input id="next_day" type="datetime-local"  name="fields[endTime]" class="form-control" value=""  />
+                            
+                            </div> 
+                            </div> 
+                            </div>  
+                    </div>
+                    <label><strong>Trong vòng 21 ngày qua Anh/Chị có thấy xuất hiện dấu hiệu nào sau đây không ?</strong></label><label style="color: red">(*)</label>
+                        <table border="1">
+                            <thead>
+                                <tr>
+                                <th class="text-center">Triệu chứng</th>
+                                <th width="100" class="text-center">Có</th>
+                                <th width="100" class="text-center">Không</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                <td>Sốt <span class="text-required">(*)</span></td>
+                                <td class="text-center"><input type="Radio" class="style-radio" name="fields[hasFever]" value="1" data-msg-required="Bạn chưa chọn triệu chứng" ></td>
+                                <td class="text-center"><input type="Radio" class="style-radio" name="fields[hasFever]" value="2" checked></td>
+                                </tr>
+                                <tr>
+                                <td>Ho <span class="text-required">(*)</span></td>
+                                <td class="text-center"><input type="Radio" class="style-radio" name="fields[hasCough]" value="1" data-msg-required="Bạn chưa chọn triệu chứng" ></td>
+                                <td class="text-center"><input type="Radio" class="style-radio" name="fields[hasCough]" value="2" checked></td>
+                                </tr>
+                                <tr>
+                                <td>Khó thở <span class="text-required">(*)</span></td>
+                                <td class="text-center"><input type="Radio" class="style-radio" name="fields[hasBreath]" value="1" data-msg-required="Bạn chưa chọn triệu chứng" ></td>
+                                <td class="text-center"><input type="Radio" class="style-radio" name="fields[hasBreath]" value="2" checked></td>
+                                </tr>
+                                <tr>
+                                <td>Viêm phổi <span class="text-required">(*)</span></td>
+                                <td class="text-center"><input type="Radio" class="style-radio" name="fields[hasPneumonia]" value="1" data-msg-required="Bạn chưa chọn triệu chứng" ></td>
+                                <td class="text-center"><input type="Radio" class="style-radio" name="fields[hasPneumonia]" value="2" checked></td>
+                                </tr>
+                                <tr>
+                                <td>Đau họng <span class="text-required">(*)</span></td>
+                                <td class="text-center"><input type="Radio" class="style-radio" name="fields[hasSoreThroat]" value="1" data-msg-required="Bạn chưa chọn triệu chứng" ></td>
+                                <td class="text-center"><input type="Radio" class="style-radio" name="fields[hasSoreThroat]" value="2" checked></td>
+                                </tr>
+                                <tr>
+                                <td>Mệt mỏi <span class="text-required">(*)</span></td>
+                                <td class="text-center"><input type="Radio" class="style-radio" name="fields[hasFatigue]" value="1" data-msg-required="Bạn chưa chọn triệu chứng" ></td>
+                                <td class="text-center"><input type="Radio" class="style-radio" name="fields[hasFatigue]" value="2" checked></td>
+                                </tr>
+                                </tbody>
+                        </table><br>
+
+                    <label><strong>Trong vòng 21 ngày qua, Anh/Chị có tiếp xúc với</strong></label><label style="color: red">(*)</label>
+                        <table border="1">
+                                <thead>
+                                    <tr>
+                                    <th ></th>
+                                    <th width="100" class="text-center">Có</th>
+                                    <th width="100" class="text-center">Không</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                    <td>Người bệnh hoặc nghi ngờ, mắc bệnh COVID-19 <span class="text-required">(*)</span></td>
+                                    <td class="text-center">
+                                    <input type="Radio" class="style-radio" name="fields[hasPatient]" value="1" data-msg-required="Bạn chưa chọn lịch sử tiếp xúc" />
+                                    </td>
+                                    <td class="text-center">
+                                    <input type="Radio" class="style-radio" name="fields[hasPatient]" value="2" checked/>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td>Người từ nước có bệnh COVID-19 <span class="text-required">(*)</span></td>
+                                    <td class="text-center">
+                                    <input type="Radio" class="style-radio" name="fields[hasFromSickCountry]" value="1" data-msg-required="Bạn chưa chọn lịch sử tiếp xúc" />
+                                    </td>
+                                    <td class="text-center">
+                                    <input type="Radio" class="style-radio" name="fields[hasFromSickCountry]" value="2" checked/>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td>Người có biểu hiện (Sốt, ho, khó thở , Viêm phổi) <span class="text-required">(*)</span></td>
+                                    <td class="text-center">
+                                    <input type="Radio" class="style-radio" name="fields[hasSick]" value="1" data-msg-required="Bạn chưa chọn lịch sử tiếp xúc" />
+                                    </td>
+                                    <td class="text-center">
+                                    <input type="Radio" class="style-radio" name="fields[hasSick]" value="2" checked/>
+                                    </td>
+                                    </tr>
+                                    </tbody>
+                        </table><br>
+
+                    <label><strong>Trong vòng 21 ngày qua, Anh/Chị có tiếp xúc với</strong></label><label style="color: red">(*)</label>
+                        <table border="1">
+                            <thead>
+                                <tr>
+                                <th class="text-center">Tên bệnh</th>
+                                <th width="100" class="text-center">Có</th>
+                                <th width="100" class="text-center">Không</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                <td>Bệnh gan mãn tĩnh <span class="text-required">(*)</span></td>
+                                <td class="text-center">
+                                <input type="Radio" class="style-radio" name="fields[hasChronicLiver]" value="1" data-msg-required="Bạn chưa chọn lịch sử phơi nhiễm" />
+                                </td>
+                                <td class="text-center">
+                                <input type="Radio" class="style-radio" name="fields[hasChronicLiver]" value="2" checked/>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td>Bệnh máu mãn tính <span class="text-required">(*)</span></td>
+                                <td class="text-center">
+                                <input type="Radio" class="style-radio" name="fields[hasChronicBlood]" value="1" data-msg-required="Bạn chưa chọn lịch sử phơi nhiễm" />
+                                </td>
+                                <td class="text-center">
+                                <input type="Radio" class="style-radio" name="fields[hasChronicBlood]" value="2" checked/>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td>Bệnh phổi mãn tính <span class="text-required">(*)</span></td>
+                                <td class="text-center">
+                                <input type="Radio" class="style-radio" name="fields[hasChronicLung]" value="1" data-msg-required="Bạn chưa chọn lịch sử phơi nhiễm" />
+                                </td>
+                                <td class="text-center">
+                                <input type="Radio" class="style-radio" name="fields[hasChronicLung]" value="2" checked/>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td>Bệnh thận mãn tĩnh <span class="text-required">(*)</span></td>
+                                <td class="text-center">
+                                <input type="Radio" class="style-radio" name="fields[hasChronicKidney]" value="1" data-msg-required="Bạn chưa chọn lịch sử phơi nhiễm" />
+                                </td>
+                                <td class="text-center">
+                                <input type="Radio" class="style-radio" name="fields[hasChronicKidney]" value="2" checked/>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td>Bệnh tim mạch <span class="text-required">(*)</span></td>
+                                <td class="text-center">
+                                <input type="Radio" class="style-radio" name="fields[hasHeartrelated]" value="1" data-msg-required="Bạn chưa chọn lịch sử phơi nhiễm" />
+                                </td>
+                                <td class="text-center">
+                                <input type="Radio" class="style-radio" name="fields[hasHeartrelated]" value="2" checked/>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td>Huyết áp cao <span class="text-required">(*)</span></td>
+                                <td class="text-center">
+                                <input type="Radio" class="style-radio" name="fields[hasHighBloodPressure]" value="1" data-msg-required="Bạn chưa chọn lịch sử phơi nhiễm" />
+                                </td>
+                                <td class="text-center">
+                                <input type="Radio" class="style-radio" name="fields[hasHighBloodPressure]" value="2" checked/>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td>Suy giảm miễn dịch <span class="text-required">(*)</span></td>
+                                <td class="text-center">
+                                <input type="Radio" class="style-radio" name="fields[hasHIV]" value="1" data-msg-required="Bạn chưa chọn lịch sử phơi nhiễm" />
+                                </td>
+                                <td class="text-center">
+                                <input type="Radio" class="style-radio" name="fields[hasHIV]" value="2" checked/>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td>Người nhận ghép tạng , Thủy xương <span class="text-required">(*)</span></td>
+                                <td class="text-center">
+                                <input type="Radio" class="style-radio" name="fields[hasOrganTransplant]" value="1" data-msg-required="Bạn chưa chọn lịch sử phơi nhiễm" />
+                                </td>
+                                <td class="text-center">
+                                <input type="Radio" class="style-radio" name="fields[hasOrganTransplant]" value="2" checked/>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td>Tiểu đường <span class="text-required">(*)</span></td>
+                                <td class="text-center">
+                                <input type="Radio" class="style-radio" name="fields[hasDiabet]" value="1" data-msg-required="Bạn chưa chọn lịch sử phơi nhiễm" />
+                                </td>
+                                <td class="text-center">
+                                <input type="Radio" class="style-radio" name="fields[hasDiabet]" value="2" checked/>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td>Ung thư <span class="text-required">(*)</span></td>
+                                <td class="text-center">
+                                <input type="Radio" class="style-radio" name="fields[hasCancer]" value="1" data-msg-required="Bạn chưa chọn lịch sử phơi nhiễm" />
+                                </td>
+                                <td class="text-center">
+                                <input type="Radio" class="style-radio" name="fields[hasCancer]" value="2" checked/>
+                                </td>
+                                </tr>
+                                </tbody>
+                        </table><br>
+                    <label ></label>
+                    <table border="1">
+                            <thead>
+                            <tr>
+                            <th class="text-center"></th>
+                            <th width="100" class="text-center">Có</th>
+                            <th width="100" class="text-center">Không</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                            <td>Bạn có đang trong thời gian thai kỳ hay không? <span class="text-required">(*)</span></td>
+                            <td class="text-center">
+                            <input type="Radio" class="style-radio" name="fields[hasPregnant]" value="1" />
+                            </td>
+                            <td class="text-center">
+                            <input type="Radio" class="style-radio" name="fields[hasPregnant]" value="2" checked/>
+                            </td>
+                            </tr>
+                            </tbody>
+                    </table>
+                    <div class="agreeWrapper">
+                    
+                        <div class="label-agree">Dữ liệu bạn cung cấp hoàn toàn bảo mật và chỉ phục vụ cho việc phòng chống dịch, thuộc quản lý của Ban chỉ đạo quốc gia về Phòng chống dịch Covid-19. Khi bạn nhấn nút "Gửi" là bạn đã hiểu và đồng ý.</div>
+                        
+                    </div>
+                    <style>
+                        .agreeWrapper .label-agree{
+                        color:#f00;
+                        margin-bottom: 20px;
+                        }
+                    </style>
+                    <div class="btn-submit-box text-center">
+                        <button type="submit" class="btn btn-success" id="Gui_to_khai">Gửi tờ khai</button>
+                        </div>
+                </form>
+            </div>
+        <!-- bố cục của phần footer -->
+        <footer>
+            <div class="footer">
+                <div class="footer1">
+                    <h3>&#128315; Liên kết</h3>
+                    <p><a href="#"> &#127963; Trang chính phủ</a></p>
+                    <p><a href="#">&#127973; Cổng bộ y tế</a></p>
+                    <p><a href="#"> &#128106; Gia đình & sức khỏe</a></p>
+                    <p><a href="#">&#128240; Báo mới</a></p>
+                </div>
+                <div class="footer2">
+                    <h3> &#128315; Liên hệ</h3>
+                    <p><a href="#">&#128231; email</i> banbientap@moh.gov.vn</a></p>
+                    <p><a href="#">&#128222; phone</i>	0246.273.2.273</a></p>
+                    <p><a href="#">&#128678; Số 138A Giảng Võ - Ba Đình - Hà Nội</a></p>
+                </div>
+                <div class="footer3">
+                    <h3> &#128315; Team</h3>
+                    <p><a href="https://www.facebook.com/GinVodka.BC.vn">&#128102; Trần Đình Tài</a></p>
+                    <p><a href="https://www.facebook.com/banam20082000/">&#128114; Nguyễn Bá Nam</a></p>
+                    <p><a href="https://www.facebook.com/100025640562663">&#128113; Trịnh Hòa Long</a></p>
+                    <p><a href="https://www.facebook.com/100032600596519">&#128104; Nguyễn Long Nhật</a></p>
+                </div>
+            </div>
+            <!-- bố cục của phần hotline footer -->
+            <span class="hotlinefooter">
+                <a href="">
+                    <img src="./img/hotline.png">
+                </a>
+            </span>
+        </footer>
+</body>
+</html>

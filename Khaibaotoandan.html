@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/Khaibaotoandan.css">
+	<script src="./js/Khaibaotoandan.js"></script>
+</head>
+<body>
+	<!-- bố cục của header -->
+	<div class="header">
+		<a href="https://tokhaiyte.vn/">
+			<img class="header_1" src="./img/anhheader1.png" alt="Logo">
+		</a>
+	</div>
+	<!-- bố cục của menu -->
+	<div class="menu">
+		<ul>
+			<li><a href="1.html">&#127969; Trang chủ</a></li>
+			<li><a href="#">😷 NCOV</a></li>
+			<li>
+				<a href="#">&#128221; Khai báo y tế</a>
+				<ul class="menu1">
+					<li><a href="KhaiBaoNhapCanh.html"> &#128188; Người nhập cảnh</a></li>
+					<li><a href="Khaibaotoandan.html">&#128106; Toàn dân</a></li>
+					<li><a href="Khaibaonoidia.html"> &#127939; Di chuyển nội địa</a></li>
+				</ul>
+			</li>
+			<li><a href="#">&#128226; Hỗ trợ</a></li>
+
+		</ul>
+	</div>
+	<!-- bố cục của form khai báo -->
+	<div class="form">
+	
+		<form class="main" action="1.html">
+		<h3>THÔNG TIN KHAI BÁO Y TẾ</h3>
+		<h5>( PHÒNG CHỐNG DỊCH COVID-19 )</h5>
+		<h6 style="color: red">Khuyến cáo: Khai báo thông tin sai là vi phạm pháp luật Việt Nam và có thể xử lý hình sự</h6>
+
+		<!--Khai hộ-->
+		<label style="padding-top: 30px">Khai hộ</label>
+		<input type="checkbox" name="">
+
+		<br>
+		<!---->
+		<div>
+			<label>Họ tên (ghi chữ IN HOA) <label style="color: red">(*)</label></label>
+			<input type="text" name="hoten" id="name">
+			<label style="margin-left: 50px" >Số hộ chiếu / CMND / CCCD<label style="color: red">(*)</label></label>
+			<input type="text" name="CMND" id="CMND">
+		</div><br>
+		<div>
+			<div>
+				<label>Năm sinh <label style="color: red">(*)</label>
+					<select id="selectyear" >
+						<option value="">-Chọn-</option>
+						<option value="1900">1900</option>
+						<option value="2000">2000</option>
+						<option value="2020">2020</option>
+					</select>
+				</label>
+
+				<label style="padding-left: 100px">Giới tính <label style="color: red">(*)</label>
+				<select id="selectsex">
+					<option value="">-Chọn-</option>
+					<option value="Nam">Nam</option>
+					<option value="Nu">Nữ</option>
+				</select> 
+				</label>
+
+				<label style="padding-left: 100px">Quốc tịch <label style="color: red">(*)</label>
+				<select id="selectscountry">
+					<option value="">-Chọn-</option>
+					<option value="VietNam">Việt Nam</option>
+					<option value="My">Mỹ</option>
+					<option value="Nga">Nga</option>
+				</select> 
+				</label>
+			</div>
+		</div><br>
+		<label>Có thẻ bảo hiểm y tế <input type="checkbox" name="" style="margin-left: 20px"></label><br>
+
+		<p><STRONG>Địa chỉ liên lạc tại Việt Nam</STRONG></p><br>
+		
+		<div>
+			<div>
+				<label>Tỉnh thành <label style="color: red">(*)</label>
+					<select id="selectprovince">
+						<option value="">-Chọn-</option>
+						<option value="1">Tỉnh An Giang</option>
+						<option value="2">Thành phố Hà Nội</option>
+						<option value="3">Thành phố Hồ Chí Minh</option>
+					</select>
+				</label>
+
+				<label style="padding-left: 50px">Quận / huyện <label style="color: red">(*)</label>
+				<select id="selectdistrict">
+					<option value="">-Chọn-</option>
+					<option value="1">Quận Bắc Từ Liêm</option>
+					<option value="2">Quận Hoàn Kiếm</option>
+					<option value="3">Huyện Hoài Đức</option>
+				</select> 
+				</label>
+
+				<label style="padding-left: 50px">Phường / xã<label style="color: red">(*)</label>
+				<select id="selectvillage">
+					<option value="">-Chọn-</option>
+					<option value="1">Xã An Khánh</option>
+					<option value="2">Xã Cát Quế</option>
+					<option value="3">Xã Yên Sở</option>
+				</select> 
+				</label>
+			</div><br>
+		</div>
+		<div>
+			<label>Hộ khẩu thường chú : <label id="phuongxa"></label><label id="quanhuyen"></label><label id="tinhthanh"></label>
+		</div>
+		<div>
+					<!--Dien thoai-->
+					<label >Điện thoại<label style="color: red">(*)</label>
+					<input type="tel" name="sodienthoai" id="sodienthoai">
+					<!--Email-->
+					<label style="padding-left: 150px">Email<label style="color: red">(*)</label>
+					<input type="text" name="email" id="email">		
+		</div><br>
+		<div >Trong vòng 21 ngày qua Anh/Chị có thấy xuất hiện dấu hiệu nào sau đây không ?<label style="color: red">(*)</label></div>
+		<table border="1">
+			<tr>
+				<th>Triệu chứng	</th>
+				<th width=150px>Có</th>
+				<th width=150px>Không</th>
+			</tr>
+			<tr>
+				<td>Sốt <label style="color: red">(*)</label></td>
+				<td class="text-center">
+                	<input type="Radio" class="style-radio" name="Sốt" value="1"  />
+                </td>
+                <td class="text-center">
+                	<input type="Radio" class="style-radio" name="Sốt" value="2" checked/>
+                </td>
+			</tr>
+			<tr>
+				<td>Ho  <label style="color: red">(*)</label></td>
+				<td class="text-center">
+                	<input type="Radio" class="style-radio" name="Ho " value="1"  />
+                </td>
+                <td class="text-center">
+                	<input type="Radio" class="style-radio" name="Ho " value="2" checked/>
+                </td>
+			</tr>
+			<tr>
+				<td>Khó thở <label style="color: red">(*)</label></td>
+				<td class="text-center">
+                	<input type="Radio" class="style-radio" name="Khó thở" value="1"  />
+                </td>
+                <td class="text-center">
+                	<input type="Radio" class="style-radio" name="Khó thở" value="2" checked/>
+                </td>
+			</tr>
+			<tr>
+				<td>Viêm phổi <label style="color: red">(*)</label></td>
+				<td class="text-center">
+                	<input type="Radio" class="style-radio" name="Viêm phổi" value="1"  />
+                </td>
+                <td class="text-center">
+                	<input type="Radio" class="style-radio" name="Viêm phổi" value="2" checked/>
+                </td>
+			</tr>
+			<tr>
+				<td>Đau họng <label style="color: red">(*)</label></td>
+				<td class="text-center">
+                	<input type="Radio" class="style-radio" name="Đau họng" value="1"  />
+                </td>
+                <td class="text-center">
+                	<input type="Radio" class="style-radio" name="Đau họng" value="2" checked/>
+                </td>
+			</tr>
+			<tr>
+				<td>Mệt mỏi <label style="color: red">(*)</label></td>
+				<td class="text-center">
+                	<input type="Radio" class="style-radio" name="Mệt mỏi" value="1"  />
+                </td>
+                <td class="text-center">
+                	<input type="Radio" class="style-radio" name="Mệt mỏi" value="2" checked/>
+                </td>
+			</tr>
+		</table>
+		<div style="margin-top: 20px;">Trong vòng 21 ngày qua, Anh/Chị có tiếp xúc với </div>
+  		<table border="1">
+			<tr>
+				<th></th>
+				<th width=150px>Có</th>
+				<th width=150px>Không</th>
+			</tr>
+			<tr>
+				<td>Người bệnh hoặc nghi ngờ, mắc bệnh COVID-19 <label style="color: red">(*)</label></td>
+				<td class="text-center">
+                	<input type="Radio" class="style-radio" name="Người bệnh hoặc nghi ngờ, mắc bệnh COVID-19" value="1"  />
+                </td>
+                <td class="text-center">
+                	<input type="Radio" class="style-radio" name="Người bệnh hoặc nghi ngờ, mắc bệnh COVID-19" value="2" checked/>
+                </td>
+			</tr>
+			<tr>
+				<td>Người từ nước có bệnh COVID-19 <label style="color: red">(*)</label></td>
+				<td class="text-center">
+                	<input type="Radio" class="style-radio" name="Người từ nước có bệnh COVID-19" value="1"  />
+                </td>
+                <td class="text-center">
+                	<input type="Radio" class="style-radio" name="Người từ nước có bệnh COVID-19" value="2" checked/>
+                </td>
+			</tr>
+			<tr>
+				<td>Người có biểu hiện (Sốt, ho, khó thở , Viêm phổi) <label style="color: red">(*)</label></td>
+				<td class="text-center">
+                	<input type="Radio" class="style-radio" name="Người có biểu hiện (Sốt, ho, khó thở , Viêm phổi)" value="1"  />
+                </td>
+                <td class="text-center">
+                	<input type="Radio" class="style-radio" name="Người có biểu hiện (Sốt, ho, khó thở , Viêm phổi)" value="2" checked/>
+                </td>
+			</tr>
+		</table>
+		<div style="margin-top: 20px;">Hiện tại Anh/Chị có các bệnh nào dưới đây </label><label style="color: red">(*)</div>
+		<table border="1">
+			<tr>
+				<th>Tên bệnh</th>
+				<th width=150px>Có</th>
+				<th width=150px>Không</th>
+				
+			</tr>
+			<tr>
+				<td>Bệnh gan mãn tĩnh <label style="color: red">(*)</label></td>
+				<td class="text-center">
+                	<input type="Radio" class="style-radio" name="Bệnh gan mãn tĩnh" value="1"  />
+                </td>
+                <td class="text-center">
+                	<input type="Radio" class="style-radio" name="Bệnh gan mãn tĩnh" value="2" checked/>
+                </td>
+			</tr>
+			<tr>
+				<td>Bệnh máu mãn tĩnh <label style="color: red">(*)</label></td>
+				<td class="text-center">
+                	<input type="Radio" class="style-radio" name="Bệnh máu mãn tĩnh" value="1"  />
+                </td>
+                <td class="text-center">
+                	<input type="Radio" class="style-radio" name="Bệnh máu mãn tĩnh" value="2" checked/>
+                </td>
+			</tr>
+			<tr>
+				<td>Bệnh phổi  mãn tĩnh <label style="color: red">(*)</label></td>
+				<td class="text-center">
+                	<input type="Radio" class="style-radio" name="Bệnh phổi  mãn tĩnh" value="1"  />
+                </td>
+                <td class="text-center">
+                	<input type="Radio" class="style-radio" name="Bệnh phổi  mãn tĩnh" value="2" checked/>
+                </td>
+			</tr>
+			<tr>
+				<td>Bệnh thận mãn tĩnh <label style="color: red">(*)</label></td>
+				<td class="text-center">
+                	<input type="Radio" class="style-radio" name="Bệnh thận mãn tĩnh" value="1"  />
+                </td>
+                <td class="text-center">
+                	<input type="Radio" class="style-radio" name="Bệnh thận mãn tĩnh" value="2" checked/>
+                </td>
+			</tr>
+			<tr>
+				<td>Bệnh tim mãn tĩnh <label style="color: red">(*)</label></td>
+				<td class="text-center">
+                	<input type="Radio" class="style-radio" name="Bệnh tim mãn tĩnh" value="1"  />
+                </td>
+                <td class="text-center">
+                	<input type="Radio" class="style-radio" name="Bệnh tim mãn tĩnh" value="2" checked/>
+                </td>
+			</tr>
+			<tr>
+				<td>Huyết áp cao <label style="color: red">(*)</label></td>
+				<td class="text-center">
+                	<input type="Radio" class="style-radio" name="Huyết áp cao" value="1"  />
+                </td>
+                <td class="text-center">
+                	<input type="Radio" class="style-radio" name="Huyết áp cao" value="2" checked/>
+                </td>
+			</tr>
+			<tr>
+				<td>Suy giảm miễn dịch <label style="color: red">(*)</label></td>
+				<td class="text-center">
+                	<input type="Radio" class="style-radio" name="Suy giảm miễn dịch" value="1"  />
+                </td>
+                <td class="text-center">
+                	<input type="Radio" class="style-radio" name="Suy giảm miễn dịch" value="2" checked/>
+                </td>
+			</tr>
+			<tr>
+				<td>Người nhận ghép tạng , Thủy xương <label style="color: red">(*)</label></td>
+				<td class="text-center">
+                	<input type="Radio" class="style-radio" name="Người nhận ghép tạng , Thủy xương" value="1"  />
+                </td>
+                <td class="text-center">
+                	<input type="Radio" class="style-radio" name="Người nhận ghép tạng , Thủy xương" value="2" checked/>
+                </td>
+			</tr>
+			<tr>
+				<td>Tiểu đường <label style="color: red">(*)</label></td>
+				<td class="text-center">
+                	<input type="Radio" class="style-radio" name="Tiểu đường" value="1"  />
+                </td>
+                <td class="text-center">
+                	<input type="Radio" class="style-radio" name="Tiểu đường" value="2" checked/>
+                </td>
+			</tr>
+			<tr>
+				<td>Ung thư <label style="color: red">(*)</label></td>
+				<td class="text-center">
+                	<input type="Radio" class="style-radio" name="Ung thư" value="1"  />
+                </td>
+                <td class="text-center">
+                	<input type="Radio" class="style-radio" name="Ung thư" value="2" checked/>
+                </td>
+			</tr>
+			<tr>
+				<td>Bạn có đang trong thời gian thai kỳ hay không?<label style="color: red">(*)</label></td>
+				<td class="text-center">
+               		<input type="Radio" class="style-radio" name="Bạn có đang trong thời gian thai kỳ hay không?" value="1"  />
+                </td>
+                <td class="text-center">
+                	<input type="Radio" class="style-radio" name="Bạn có đang trong thời gian thai kỳ hay không?" value="2" checked/>
+                </td>
+			</tr>
+		</table>
+		<div style="margin-top: 20px;">
+			<label style="color: red">Dữ liệu bạn cung cấp hoàn toàn bảo mật và chỉ phục vụ cho việc phòng chống dịch, thuộc quản lý của Ban chỉ đạo quốc gia về Phòng chống dịch Covid-19. Khi bạn nhấn nút "Khai báo" là bạn đã hiểu và đồng ý.</label>
+		</div>
+		<div class="button">
+			<button type="button" class="btn btn-success" id="khaibao">Khai báo</button>
+		</div>
+		</form>
+	</div>
+	<!-- bố cục của phần footer -->
+	<div class="footer">
+		<div class="footer1">
+			<h3>&#128315; Liên kết</h3>
+			<p><a href="#"> &#127963; Trang chính phủ</a></p>
+			<p><a href="#">&#127973; Cổng bộ y tế</a></p>
+			<p><a href="#"> &#128106; Gia đình & sức khỏe</a></p>
+			<p><a href="#">&#128240; Báo mới</a></p>
+		</div>
+		<div class="footer2">
+			<h3> &#128315; Liên hệ</h3>
+			<p><a href="#">&#128231; email</i> banbientap@moh.gov.vn</a></p>
+			<p><a href="#">&#128222; phone</i>	0246.273.2.273</a></p>
+			<p><a href="#">&#128678; Số 138A Giảng Võ - Ba Đình - Hà Nội</a></p>
+		</div>
+		<div class="footer3">
+			<h3> &#128315; Team</h3>
+			<p><a href="https://www.facebook.com/GinVodka.BC.vn">&#128102; Trần Đình Tài</a></p>
+			<p><a href="https://www.facebook.com/banam20082000/">&#128114; Nguyễn Bá Nam</a></p>
+			<p><a href="https://www.facebook.com/100025640562663">&#128113; Trịnh Hòa Long</a></p>
+			<p><a href="https://www.facebook.com/100032600596519">&#128104; Nguyễn Long Nhật</a></p>
+		</div>
+	</div>
+	<!-- bố cục của phần hotline footer -->
+	<span class="hotlinefooter">
+				<a href="">
+					<img src="./img/hotline.png">
+				</a>
+	</span>
+</body>
+</html>

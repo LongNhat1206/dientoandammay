@@ -1,0 +1,202 @@
+    body{background-color: lightgray;}
+    .header_1{
+        width: 100% ;
+        background-color: #0a6dd4;
+        position: relative;
+    }
+    
+    .form{
+        width:70%;
+        margin: 20px auto;
+        background-color: white;
+        padding: 20px;
+        border-left: 1px solid lightgray;
+        border-right: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+    }
+    h3{
+
+        text-align: center;
+        font-size: 50px;
+    }
+    h5{
+        text-align: center;
+    }
+    h6{
+        text-align: center;
+    }
+    table{
+
+        width: 100%;
+        margin-top: 10px;
+    }
+    th ,td{
+        /*đưa text về trung tâm*/
+        text-align: center;
+    }
+    th{  
+        /*màu cho dòng đầu tiên của bảng*/
+        background-color: #DCDCDC;
+    }
+    img{
+        width: 100%;
+    }
+    #kiemtra{
+        margin-left: 220px;
+    }
+    #khaibao{
+        margin-left: 260px;
+    }
+
+
+    
+    /*CSS cho menu*/
+    .menu{width: 100%;height: 70px;box-shadow: 10px 1px 7px #FF9966;z-index: 1; }
+    /*==Style cho menu===*/
+    .menu ul {
+    list-style-type: none;
+    text-align: center;
+    background-color: #009999;
+    }
+    .menu ul li {
+        /*tạo hiệu ứng cho thẻ li*/
+    color: #f1f1f1;
+    display: inline-table;
+    width: 200px;
+    height: 70px;
+    line-height: 70px;
+    position: relative;
+    }
+    .menu ul li a {
+        /*thẻ bỏ gạch chân cho thẻ a*/
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    }
+    .menu ul li a:hover {
+        /*màu khi trỏ chuột*/
+    background: #FFFFCC;
+    color: #220000;
+    }
+    .menu ul li .menu1{
+        padding-left: 0px;
+    }
+    /*ẩn class menu1*/
+    .menu ul li> .menu1{
+        display: none;
+        position: absolute;
+    }
+    /*hiện class menu1 khi trỏ chuột vào*/
+    .menu ul li:hover .menu1{
+        display: block;
+    }
+
+    thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+    }
+
+    #khaibao{
+        margin-left: 400px;
+        width: 20%;
+    }
+     /*CSS cho button*/
+    #khaibao{
+        margin-left: 400px;
+        width: 20%;
+    }
+    /*CSS cho text*/
+    input[type=text]{
+        border:1px solid black;
+        border-radius: 10px;
+        outline: none;
+        transition: .5s;
+    }
+    /*CSS cho text*/
+    input[type=text]{
+        border:1px solid black;
+        border-radius: 10px;
+        outline: none;
+        transition: .5s;
+    }
+    input[type=text]:focus{
+        border-color: lightgray;
+        box-shadow: 0 0 10px 0 lightgray;
+    }
+    /*CSS cho tel*/
+    input[type=number]{
+      border:1px solid black;
+      border-radius: 10px;
+      outline: none;
+      transition: .5s;
+    }
+    input[type=number]:focus{
+      border-color: lightgray;
+      box-shadow: 0 0 10px 0 lightgray;
+    }
+    
+    /*CSS cho footer*/
+  .footer{width: 100%;height: 50%;background-color:#0a6dd4;color: white;overflow: auto;}
+  .footer1{width: 33%;height: 30%;float: left;}
+  .footer2{width: 33%;height: 30%;float: left;}
+  .footer3{width: 33%;height: 30%;float: left;}
+/*css cho phần footer 1*/
+.footer1 h3{
+  
+  font-size: 20px;
+  margin: 5px 20px;
+}
+.footer2 h3{
+  
+  font-size: 20px;
+  margin: 5px 20px;
+}
+.footer3 h3{
+  
+  font-size: 20px;
+  margin: 5px 20px;
+}
+.footer p{
+    font-size: 12px;
+    margin: 1px 40px 10px 230px;
+}
+.footer p a{
+  text-decoration: none;
+  color: #DDDDDD;
+}
+.footer p:hover a{
+  color: white;
+}
+/*CSS cho hotlinefooter*/
+ .hotlinefooter a{
+    background: #F2651C;
+    border-radius: 30px;
+    padding-right: 5px;
+    position: fixed; 
+    bottom: 10px; 
+    left: 10px;
+ }
+
+    /*dùng media để tùy chỉnh kích thước giao diện theo màn hình*/
+    @media screen  and (max-width:1000px){
+        .menu, .banner img{
+        width: 100%;
+        height: 100%;
+        }
+    }
+    @media screen  and (max-width:1000px){
+        .main{
+        float: none;
+        width: 100%; 
+        }
+        }
+    @media screen  and (max-width:1000px){
+        .footer{
+            float: none; 
+            width: 100%; 
+            height: 100%;
+        }
+        }
+  
+

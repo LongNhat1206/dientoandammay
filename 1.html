@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Trangchu</title>
+	<link rel="stylesheet" type="text/css" href="./css/1.css">
+	
+	
+	
+</head>
+<body>
+	<!-- bố cục của pts -->
+	<div class="pts">
+		<div class="pts_1"></div>
+		<div class="pts_2">
+			<div class="pts_2_left">
+				<img src="./img/anh1pts.png">
+			</div>
+			<div class="pts_2_right">
+				<input type="text" placeholder="Nhập từ tìm kiếm..." id="tk">
+				<img src="./img/1.png" alt="">
+			</div>
+		</div>
+	</div>
+	<!-- bố cục của menu -->
+	<div class="menu">
+		<ul>
+			<li><a href="1.html"> Trang chủ</a></li>
+			<li><a href="#"> NCOV</a></li>
+			<li>
+				<a href="#">Khai báo y tế</a>
+				<ul class="menu1">
+					<li><a href="./KhaiBaoNhapCanh.html">Người nhập cảnh</a></li>
+					<li><a href="./Khaibaotoandan.html">Toàn dân</a></li>
+					<li><a href="./Khaibaonoidia.html"> Di chuyển nội địa</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Hỗ trợ</a></li>
+
+		</ul>
+	</div>
+	<!-- bố cục của banner -->
+	<div class="banner">
+		<img src="./img/anh1.png" alt="" class="banner_slide" onclick="trans()" style="border-radius: 10px 10px 50px 50px">
+	</div>
+	<!-- bố cục phần thông báo -->
+	<div class="thongbao">
+		<div class="icon">&#128227;</div>
+		<div class="chuoithongbao"><marquee>Mặc dù các chuyên gia cho rằng, vẫn tiềm ẩn nhiều nguy cơ tái phát dịch, nhưng người dân ở một số nơi vẫn có tâm lý chủ quan, lơ là phòng dịch, trong quá trình tham gia giao thông, hoặc tới công viên, vườn hoa, không ít người dân vẫn không đeo khẩu trang.</marquee></div>
+	</div>
+	<!-- bố cục của main -->
+	<div class="main">
+		<div class="mainleft">
+			<!-- bố cục của main trái 1 -->
+			<div class="mainleft1">
+				<ul class="support">
+					<h1 style=" border-bottom: 2px solid #880000;color: #EE0000;">Hỗ trợ người dân</h1>
+					<!-- thuộc tính css border-radius để co đường viền -->
+					<li style="width: 290;height: 50px;background-color: red;border-radius: 20px;"><a href="#">Đường dây nóng<br>19009095</a></li>
+					<li style="width: 290;height: 50px;background-color: #006600;border-radius: 20px;"><a href="#">ứng dụng công nghệ thông tin</a></li>
+					<li style="width: 290;height: 50px;background-color: #000000;border-radius: 20px;"><a href="#">Diễn biến dịch thế giới</a></li>
+					<li style="width: 290;height: 50px;background-color: #0033FF;border-radius: 20px;"><a href="#">Hỏi-đáp,phản nhanh</a></li>
+				</ul>
+			</div>
+			<!-- bố cục của main trái 2 -->
+			<div class="mainleft2">
+				<table>
+					<caption style="color: #FF0000;font-size: 40px;">Thống kê số ca nhiễm</caption>
+					
+						<tr>
+							<th><span id="MyClockDiisplay"></span></th>
+							<th>Việt Nam</th>
+							<th>Thế giới</th>
+						</tr>
+						<tr>
+							<td>Số ca Nhiễm</td>
+							<td>1.094</td>
+							<td>33.902.257</td>
+						</tr>
+						<tr>
+							<td>Đang Nhiễm</td>
+							<td>46</td>
+							<td>7.695.297</td>
+						</tr>
+						<tr>
+							<td>Khỏi</td>
+							<td>1.010</td>
+							<td>25.193.255</td>
+						</tr>
+						<tr>
+							<td>Tử Vong</td>
+							<td>35</td>
+							<td>1.013.705</td>
+						</tr>
+				</table>
+			</div>
+		</div>
+		<div class="mainright">
+			<h1>Tin mới &#127910;</h1>
+				<div class="mainright_1">
+					<a href="https://nld.com.vn/thoi-su/xu-nghiem-nguoi-vi-pham-phong-chong-covid-19-20201003225048725.htm">
+				      	<img src="./img/mainright1.jpg" alt="">
+				 		<div class="textbox1">
+							<p class="text">Xử lý nghiêm người vi phạm phòng chống Covid-19</p>
+						</div>
+						<div class="textbox3">
+							<p class="text3">xem thêm</p>
+						</div>
+					</a>
+					<div class="textbox2">  Nguy cơ lây nhiễm luôn luôn thường trực là từ người nhập cảnh và người mang mầm bệnh đã lưu hành trong cộng đồng....</div>
+				</div>
+				<div class="mainright_2">
+					<a href="https://www.tienphong.vn/kinh-te/xu-huong-du-lich-binh-thuong-moi-1730379.tpo">
+				      	<img src="./img/mainright2.jpg" alt="">
+				 		<div class="textbox">
+							<p class="text">Xu hướng du lịch 'bình thường mới'</p>
+						</div>
+						<div class="textbox3">
+							<p class="text3">xem thêm</p>
+						</div>
+					</a>
+				</div>
+				<div class="mainright_3">
+					<a href="https://vtc.vn/sap-mo-lai-hai-chieu-duong-bay-thuong-mai-voi-nhat-ban-trung-quoc-ar572909.html">
+				      	<img src="./img/mainright3.jpg" alt="">
+				 		<div class="textbox">
+							<p class="text">Sắp mở lại hai chiều đường bay thương mại</p>
+						</div>
+						<div class="textbox3">
+							<p class="text3">xem thêm</p>
+						</div>
+					</a>
+				</div>
+		</div>
+	</div>
+	<!-- bố cục của phần liên kết -->
+	<div class="lienket">
+		<p>THÔNG TIN CẬP NHẬT LIÊN TỤC</p>
+		<a href="./Subscrib.html"><img src="./img/anh6.png" class="img1"></a>
+		<a href="./login.html"><img src="./img/anh7.png" class="img2"></a>
+	</div>
+	<!-- bố cục của phần footer -->
+	<div class="footer">
+		<div class="footer1">
+			<h3>&#128315; Liên kết</h3>
+			<p><a href="http://www.chinhphu.vn/portal/page/portal/chinhphu/trangchu/"> &#127963; Trang chính phủ</a></p>
+			<p><a href="https://moh.gov.vn/">&#127973; Cổng bộ y tế</a></p>
+			<p><a href="https://www.suckhoegiadinh.com.vn/"> &#128106; Gia đình & sức khỏe</a></p>
+			<p><a href="https://baomoi.com/">&#128240; Báo mới</a></p>
+		</div>
+		<div class="footer2">
+			<h3> &#128315; Liên hệ</h3>
+			<p><a href="#">&#128231; email</i> banbientap@moh.gov.vn</a></p>
+			<p><a href="#">&#128222; phone</i>	0246.273.2.273</a></p>
+			<p><a href="#">&#128678; Số 138A Giảng Võ - Ba Đình - Hà Nội</a></p>
+		</div>
+		<div class="footer3">
+			<h3> &#128315; Team</h3>
+			<p>&#128102;<a href="https://www.facebook.com/GinVodka.BC.vn">Trần Đình Tài</a></p>
+			<p>&#128114;<a href="https://www.facebook.com/banam20082000"> Nguyễn Bá Nam</a></p>
+			<p>&#128113;<a href="https://www.facebook.com/profile.php?id=100025640562663"> Trịnh Hòa Long</a></p>
+			<p>&#128104;<a href="https://www.facebook.com/profile.php?id=100032600596519"> Nguyễn Long Nhật</a></p>
+		</div>
+		<!-- bố cục của phần hotline footer -->
+		<span class="hotlinefooter">
+			<a href="">
+				<img src="./img/hotline.png">
+			</a>
+		</span>
+	</div>
+	<script type="text/javascript" src="./js/1.js"></script>
+
+</body>
+</html>

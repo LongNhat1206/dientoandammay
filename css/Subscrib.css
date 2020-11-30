@@ -1,0 +1,90 @@
+*{margin: auto;}
+body{background-image: url('../img/anhform.jpg');}
+.banner{
+    width:400px;
+    height:100px;
+    margin-top: 70px;
+    padding:20px 5px 5px 80px ;
+    font-size: 40px;
+    margin-left: 30%;
+    color: white;
+    text-shadow: 5px 2px 4px grey;
+    
+}
+.dangky{
+    width:500px;
+    height:500px;
+    background-color:#FFFFFF;
+    margin-top: 20px;
+    position: relative;
+    background: none;
+    border-radius: 30px;
+    color: white;
+    
+}
+.textbox{width: 500px;padding-bottom: 40px;}
+
+.dangky input{
+    width: 400px;
+    height: 10px;
+    padding: 20px 10px 10px 40px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    background: none;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid red;
+    color: white;
+    
+    
+}
+.dangky select{
+    width: 450px;
+    height: 30px;
+    background: none;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid red;
+    font-size: 20px;
+    color: #00FFCC;
+    
+}
+.dangky p{
+    text-align: right;
+    margin-right: 45px;
+    margin-bottom: -30px;
+}
+.dangky #kiemtra{
+    margin-left: 29%;
+    padding:2px 1px 2px 1px;
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    outline: none;
+    background-color: cornsilk;
+    color: black;
+    
+}
+#kiemtra:hover{
+    background-color: brown;
+}
+.dangky #dangky{
+    
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    outline: none;
+    padding:2px 1px 2px 1px;
+    background-color: blueviolet;
+}
+.textbox i{
+    margin-right: -20px;
+    color: red;
+    z-index: 1;
+    
+}
+

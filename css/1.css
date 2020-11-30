@@ -1,0 +1,448 @@
+*{margin: auto;}
+body{background-color: ghostwhite;}
+/*xét giao vùng cho các div*/
+.pts{width: 100%;height: 97px;margin-bottom: 0px;}
+.menu{width: 100%;height: 70px;box-shadow: 10px 1px 7px #FF9966;z-index: 1;}
+.banner{width: 1000px;height: 300px;}
+.thongbao{width: 450px;height: 30px;font-size: 20px;color: red;padding-top: 3px;}
+.main{width: 1000px;height: 640px;overflow: hidden;}
+.lienket{width: 1000px;height: 250px;}
+.footer{width: 100%;height: 260px;background-color:black;color: white;overflow: hidden;}
+.main .mainleft{width: 300px;height: 700px;float: left;box-shadow: inset 0px 0px 20px #CCCCCC;margin-top: 35px;}
+.main .mainright{width: 685px;height: 660px;float: left;margin-left: 15px;overflow: hidden;}
+/*css cho phần pts*/
+.pts .pts_1{width: 100%;height: 7px;background-color: #009999;}
+.pts .pts_2{width: 100%;height: 90px;background-color:#FFFFFF}
+.pts .pts_2_left{width: 70%;height: 90px; float: left;}
+.pts .pts_2_right{width: 30%;height: 90px;float: left; }
+.pts .pts_2_right #tk{
+  margin: 30px 1px 10px 90px;
+  padding: 5px 10px 5px 5px;
+  border: 1px solid white;
+  border-bottom: 1px solid red;
+  outline: none;
+}
+.pts .pts_2_left img{
+  margin-left: 90px;
+  border-radius: 5px;
+}
+.pts .pts_2_right img{
+  width: 30px;
+  height: 30px;
+  padding-top: 40px;
+  margin-bottom: -10px;
+  margin-left: -40px;
+}
+/*==Style cho menu===*/
+.menu ul {
+ 
+  list-style-type: none;
+  text-align: center;
+  background-color: #009999;
+}
+.menu ul li {
+	/*tạo hiệu ứng cho thẻ li*/
+  color: #f1f1f1;
+  /* menu nằm ngang */
+  display: inline-table; 
+  width: 200px;
+  height: 70px;
+  line-height: 70px;
+  position: relative;
+
+}
+
+.menu ul li a {
+	/*thẻ bỏ gạch chân cho thẻ a*/
+  text-decoration: none;
+  color: #000000;
+  display: block;
+  font-size: 20px;
+}
+.menu ul li a:hover {
+	/*màu khi trỏ chuột*/
+  background: #FFFFCC;
+  color: #220000;
+  font-size: 22px;
+}
+.menu ul li .menu1{
+	padding-left: 0px;
+}
+/*ẩn class menu1*/
+.menu ul li> .menu1{
+	display: none;
+	position: absolute;
+}
+/*hiện class menu1 khi trỏ chuột vào*/
+.menu ul li:hover .menu1{
+	display: block;
+}
+/*tạo css cho banner*/
+.banner .banner_slide{
+  box-shadow: 1px 1px 1px #FF9966;
+}
+/*css cho phần main trái 1*/
+.main .mainleft .mainleft1{
+  width: 300px;
+  height: 300px;
+}
+.main .mainleft .mainleft1 .support{
+  list-style-type: none;
+  text-align: center;
+  padding-right:10px;
+  padding-top: 10px;
+
+}
+.support li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  }
+.support li a{
+  /*thẻ bỏ gạch chân cho thẻ a*/
+  text-decoration: none;
+ color: white;
+  display: block;
+  padding:5px 5px 10px 5px;
+  font-size: 20px;
+
+}
+/*css cho phần thông báo*/
+.thongbao .icon{
+  width: 10px;
+  height: 10px;
+  float: left;
+  margin-right: 8px;
+}
+.thongbao .chuoithongbao{
+  width: 430px;
+  height: 30px;
+  float: left;
+}
+/*css cho phần main trái 1*/
+.support li{
+  width: 200px;
+  height: 50px;
+  transition: width 2s;
+  font-size: 10px;
+  overflow: hidden;
+}
+li:hover {
+  width: 290px;
+  font-size: 20px;
+}
+
+/*end*/
+
+
+
+/*css cho phần main trái 2*/
+.main .mainleft .mainleft2{
+  width: 300px;
+  height: 310px;
+  /*background-color: #FF0000;*/
+  margin-top: 30px;
+  border-top: 1px solid red;
+}
+.main .mainleft .mainleft2 th, td {
+
+ border-bottom: 7px solid #ddd;
+ font-size: 20px;
+}
+tr:hover {background-color: #ffff00;}
+.main .mainleft .mainleft2 #MyClockDiisplay {
+  background-color: #ffff00;
+  color: #220000;
+}
+/*end*/
+
+/*css cho phần main phải*/
+
+.mainright_1{
+  width: 300px;
+  height: 590px;
+  float: left;
+  background-color: ghostwhite;
+  margin-top:5px;
+  box-shadow: inset 0px 0px 20px #CCCCCC; /*đổ bóng*/
+}
+.mainright_2{
+  width: 365px;
+  height: 285px;
+  float: left;
+  background-color: ghostwhite;
+  margin:5px 0px 10px 20px;
+  box-shadow: inset 0px 0px 20px #CCCCCC; 
+
+}
+.mainright_3{
+  width: 365px;
+  height: 275px;
+  float: left;
+  background-color: ghostwhite;
+  margin:20px 0px 10px 20px;
+  box-shadow: inset 0px 0px 20px #CCCCCC; 
+}
+.mainright h1{
+  text-align: right;
+  /* border-bottom: 1px solid #DDDDDD;  */
+}
+.mainright a{
+  text-decoration: none;
+}
+.mainright a:hover p{
+  color: #00CCFF;
+}
+.mainright .mainright_1 p{
+  font-size: 40px;
+  padding: 30px 0px 10px 30px;
+  color: #111111;
+}
+.mainright_1 img{
+  width: 280px;
+  height: 180px;
+  margin: 15px 3px 3px 9px;
+}
+.mainright_1 .textbox1{
+  border-bottom: 1px solid #DDDDDD;
+}
+.mainright_1 .textbox2{
+  padding: 10px 10px 5px 13px;
+  font-size: 20px;
+  font-style: oblique;
+}
+/*2*/
+.mainright .mainright_2 p{
+  font-size: 22px;
+  padding: 30px 0px 10px 30px;
+  color: #111111;
+}
+.mainright_2 img{
+  width: 340px;
+  height: 180px;
+  margin: 17px 3px 3px 9px;
+}
+
+/*3*/
+.mainright .mainright_3 p{
+  font-size: 22px;
+  padding: 5px 0px 10px 30px;
+  color: #111111;
+}
+.mainright_3 img{
+  width: 340px;
+  height: 175px;
+  margin: 15px 3px 3px 10px;
+}
+/*css cho phần liên kết*/
+.lienket p{
+  text-align: right;
+  padding-top: 15px;
+  border-bottom: 2px solid #880000;color: #EE0000;
+  font-size: 30px;
+}
+.lienket a{width:240px;height: 123px;padding-left: 0px; padding-top: 7px;}
+/*hiệu ứng cho ảnh ở phần liên kết*/
+.lienket .img1{  
+  width: 400px;
+  height:199px;
+  transition: width 2s;
+}
+.img1:hover{width: 638px;}
+
+.lienket .img2{  
+  width: 300px;
+  height:199px;
+  transition: width 2s;
+  margin-right: 0px;
+}
+.img2:hover{width: 400px;}
+/*end*/
+
+/*css cho phần footer*/
+.footer1{width: 35%;height: 260px;float: left;}
+.footer2{width: 35%;height: 260px;float: left;}
+.footer3{width: 30%;height: 260px;float: left;}
+/*css cho phần footer 1*/
+.footer1 h3{
+  color: white;
+  font-size: 30px;
+  padding: 10px 20px;
+}
+.footer2 h3{
+  color: white;
+  font-size: 30px;
+  padding: 10px 20px;
+}
+.footer3 h3{
+  color: white;
+  font-size: 30px;
+  padding: 2px 20px;
+}
+.footer p{
+    font-size: 15px;
+    padding: 15px 40px 5px 40px;
+}
+.footer p a{
+  text-decoration: none;
+  color: #DDDDDD;
+}
+.footer p:hover a{
+  color: white;
+}
+/*CSS cho hotlinefooter*/
+.hotlinefooter a{
+  background: #F2651C;
+  border-radius: 30px;
+  padding-right: 5px;
+  position: fixed; 
+  bottom: 10px; 
+  left: 10px;
+}
+
+/*tạo hiệu ứng cho các main con trong main right*/
+.mainright_1 {
+position:relative;/*Định vị trí tuyệt đối cho thành phần*/
+ overflow:hidden;/*k cho tràn ra */
+}
+
+.mainright_1 .textbox3 {
+width:300px;
+ height:200px; 
+ position:absolute; 
+ top:0;
+left:0;
+margin-top:-200px;
+color: #00FF33;
+background-color:  rgba(255,255,255,.75);
+}
+.mainright_1:hover .textbox3 {
+margin-top:0;
+font-size: 17px;
+text-align: center;
+}
+
+
+.mainright_2 {
+position:relative;
+ overflow:hidden;
+}
+
+.mainright_2 .textbox3 {
+width:350px;
+ height:200px; 
+
+ position:absolute; /*Định vị trí tuyệt đối cho thành phần theo thành phần bao ngoài (thành phần định vị trí tương đối position: relative;) hoặc theo cửa sổ trình duyệt.*/
+ top:0;
+left:0;
+margin-top:-200px;
+color: #00FF33;
+background-color:  rgba(255,255,255,.75);
+}
+.mainright_2:hover .textbox3 {
+margin-top:0;
+text-align: center;
+font-size: 10px;
+}
+
+.mainright_3 {
+position:relative;
+ overflow:hidden;
+}
+
+.mainright_3 .textbox3 {
+width:350px;
+ height:170px; 
+ position:absolute; 
+ top:0;
+left:0;
+margin-top:-200px;
+color: #00FF33;
+background-color:  rgba(255,255,255,.75);
+}
+.mainright_3:hover .textbox3 {
+margin-top:0px;
+text-align: center;
+padding-top: 20px;
+}
+
+.textbox3 {
+ transition:0.9s;
+ font-size: 13px;
+}
+
+/*dùng media để tùy chỉnh kích thước giao diện theo màn hình*/
+@media screen  and (max-width:1000px){
+  .pts{
+    display: none;
+  }
+}
+@media screen  and (max-width:1000px){
+  .banner{
+    display: none;
+  }
+}
+@media screen  and (max-width:1000px){
+  .menu{
+    width: 100%;
+    position: fixed;
+    
+  }
+}
+@media screen  and (max-width:1000px){
+  .main{
+    margin-top: 70px;
+    float: none;
+    width: 100%; 
+    height: 100%;
+    
+    }
+  }
+
+  @media screen  and (max-width:1000px){
+  .mainleft{
+    width: 100%; 
+    height: 100%;
+    margin-left: 70px;
+    }
+  }
+  @media screen  and (max-width:1000px){
+    .mainright{
+      float: none;
+      width: 100%; 
+      height: 100%;
+      padding-left: 50px;
+      }
+    }
+
+      @media screen  and (max-width:1000px){
+        .mainright_2{
+          display: none;
+          }
+        }
+        
+      @media screen  and (max-width:1000px){
+        .mainright_3{
+          display: none;
+          }
+        }
+        @media screen  and (max-width:1000px){
+          .lienket{
+            display: none;
+            }
+          }
+  @media screen  and (max-width:1000px){
+    .footer{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      font-size: 30px;
+    }
+  }
+  @media screen  and (max-width:1000px){
+    .footer h3{
+      width: 100%;
+      height: 20%;
+      font-size: 30px;
+    }
+  }
